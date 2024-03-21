@@ -1,0 +1,12 @@
+通过树的学习，以及代码实现，作出总结
+1.基本的遍历：先序、中序、后序、层序
+    递归的遍历：
+        先序：
+            var inorder func(node *TreeNode)
+            inorder = func(node *TreeNode) {
+                if node==nil:
+                    return
+                inorder(node.Left)
+                ...
+                inorder(node.Right)
+            }
